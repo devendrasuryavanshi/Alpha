@@ -6,6 +6,8 @@ public class LinkedList2 {
     public static void main(String[] args) {
         //create
         LinkedList<Integer> ll = new LinkedList<>();
+        ll.get(0);
+        ll.remove(3);
 
         //add
         ll.addLast(1);

@@ -24,9 +24,9 @@ public class GenerateBinaryNum {
     public static void generateBinAndPrint(int n) {
         Queue<String> q = new LinkedList<>();
         q.add("1");
-        while (n-- > 2) {
+        while(n-- > 0) {
             String s1 = q.remove();
-            System.out.println(s1);
+            System.out.print(s1+" ");
             String s2 = s1;
             q.add(s1+"0");
             q.add(s2+"1");
@@ -64,11 +64,11 @@ public class GenerateBinaryNum {
         return res;
     }
     public static void main(String[] args) {
-        // generateBinAndPrint(183);
+        generateBinAndPrint(7);
         // Example usage
-        int[] arr1 = {4, 3, 2, 6};
-        int[] arr2 = {1, 2, 3};
-        System.out.println("Minimum cost for arr1: " + minCost(arr1, arr1.length));
-        System.out.println("Minimum cost for arr2: " + minCost(arr2, arr2.length));
+        // int[] arr1 = {4, 3, 2, 6};
+        // int[] arr2 = {1, 2, 3};
+        // System.out.println("Minimum cost for arr1: " + minCost(arr1, arr1.length));
+        // System.out.println("Minimum cost for arr2: " + minCost(arr2, arr2.length));
     }
 }
