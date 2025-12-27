@@ -22,6 +22,7 @@ public class codeforces {
                 }
             }
             System.out.println(isPalindrome ? "YES" : "NO");
+            
         }
     }
 }
